@@ -63,6 +63,8 @@ public class P2Artifact {
      * Specifies transitive dependencies that should be excluded
      */
     private List<String> excludes = new ArrayList<String>();
+    
+    private String symbolicName;
 
     /**
      * The BND instructions for the bundle.
@@ -123,5 +125,13 @@ public class P2Artifact {
     public void setExcludes(List<String> excludes) {
         this.excludes = excludes;
     }
+
+	public String getSymbolicName() {
+		return symbolicName;
+	}
+
+	public void setSymbolicName(String symbolicName) {
+		this.symbolicName = symbolicName;
+	}
 
 }
